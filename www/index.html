@@ -61,7 +61,7 @@ function updateCharacterCount(inputId, counterId, maxLength) {
 
         counter.text(`残り${remain}文字`);//カウンター部分に表示
 
-        if (length > maxLength) {
+        if (remain < 0) {
             counter.addClass('error');
         } else {
             counter.removeClass('error');
